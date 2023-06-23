@@ -8,16 +8,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter First App',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(
-              seedColor: Color.fromARGB(255, 255, 255, 255)),
-          useMaterial3: true,
+          primaryColor: Colors.deepPurple,
         ),
         initialRoute: HomeScreen.routeName,
         routes: {
           // ignore: prefer_const_constructors
           HomeScreen.routeName: (_) => HomeScreen(),
+          NewUserScreen.routeName: (_) => const NewUserScreen(),
         });
   }
 }

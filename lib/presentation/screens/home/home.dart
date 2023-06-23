@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prueba/presentation/screens/screens.dart';
 
 class HomeScreen extends StatefulWidget {
   static String routeName = '/';
@@ -29,7 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
         separatorBuilder: (context, index) => const Divider(),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, NewUserScreen.routeName);
+        },
         backgroundColor: Theme.of(context).primaryColor,
         child: const Icon(Icons.person_add),
       ),
