@@ -17,7 +17,7 @@ class AuthScreen extends StatelessWidget {
       appBar: AppBar(title: const Text("Login Utem")),
       body: WebView(
         initialUrl: initialUrl,
-        userAgent: "random",
+        userAgent: "Utem/1.0",
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (controller) {
           controller.clearCache();
