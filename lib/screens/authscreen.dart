@@ -1,4 +1,4 @@
-import 'package:cpyd/screens/coursesscreen.dart';
+import 'package:cpyd/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -17,7 +17,7 @@ class AuthScreen extends StatelessWidget {
       appBar: AppBar(title: const Text("Login Utem")),
       body: WebView(
         initialUrl: initialUrl,
-        userAgent: "Utem/1.0",
+        userAgent: "random",
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (controller) {
           controller.clearCache();
@@ -39,7 +39,7 @@ class AuthScreen extends StatelessWidget {
             Navigator.pop(context);
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const CoursesScreen()),
+              MaterialPageRoute(builder: (context) => const Homescreen()),
             );
           }
           return NavigationDecision.navigate;

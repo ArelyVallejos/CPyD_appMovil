@@ -1,4 +1,6 @@
 import 'dart:async';
+
+import 'package:cpyd/screens/homescreen.dart';
 import 'package:cpyd/screens/loginscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -41,12 +43,13 @@ class _MyHomePageState extends State<MyHomePage> {
             MaterialPageRoute(builder: (context) => const LoginScreen())));
   }
 
+  @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
       child: const Image(
         image: AssetImage("lib/assets/images/Logo_UTEM.gif"),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
