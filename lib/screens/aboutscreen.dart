@@ -49,7 +49,7 @@ class AboutScreen extends StatelessWidget {
               icon: Icons.link_rounded,
               title: "GitHub",
               description:
-                  "Puedes encontrar el código en este sitio: https://github.com/ArelyVallejos/cpyd",
+                  "Puedes encontrar el código en este sitio: https://github.com/ArelyVallejos/CpyD_appMovil",
             ),
           ),
           const SizedBox(height: 10.0),
