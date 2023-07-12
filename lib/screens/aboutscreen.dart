@@ -69,7 +69,7 @@ class AboutScreen extends StatelessWidget {
           ),
           const SizedBox(height: 10.0),
           Text(
-            "Primer Semestre 2022",
+            "Primer semestre 2023",
             style: Theme.of(context).textTheme.bodySmall,
           ),
           const SizedBox(height: 10.0),
