@@ -14,7 +14,19 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Login Utem")),
+      appBar: AppBar(
+        elevation: 0.0,
+        toolbarHeight: 80,
+        title: const Text('      Login UTEM'),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 3, 204, 204),
+            Color.fromARGB(255, 2, 129, 129)
+          ], begin: Alignment.bottomCenter, end: Alignment.topCenter)),
+        ),
+        backgroundColor: Colors.white,
+      ),
       body: WebView(
         initialUrl: initialUrl,
         userAgent: "random",
@@ -24,7 +36,6 @@ class AuthScreen extends StatelessWidget {
           CookieManager().clearCookies();
         },
         navigationDelegate: (navReq) {
-          // TODO: Revisar que pasa cuando te conectas con una cuenta no utem
           if (navReq.url.startsWith(destinationUrl)) {
             // Si la pagina a la que vamos es la de resultados, guardo
             // el JWT, y navego a HomeScreen

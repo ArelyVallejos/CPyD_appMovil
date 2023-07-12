@@ -67,7 +67,7 @@ class CourseListTile extends StatelessWidget {
             )
           },
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(40),
             width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

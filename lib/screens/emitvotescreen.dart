@@ -9,7 +9,17 @@ class EmitVoteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Votando"),
+        elevation: 0.0,
+        toolbarHeight: 80,
+        title: const Text('   Votando'),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 3, 204, 204),
+            Color.fromARGB(255, 2, 129, 129)
+          ], begin: Alignment.bottomCenter, end: Alignment.topCenter)),
+        ),
+        backgroundColor: Colors.transparent,
       ),
       body: Center(
         child: Text(course.name),
