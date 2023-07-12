@@ -39,7 +39,7 @@ class AuthScreen extends StatelessWidget {
             Navigator.pop(context);
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const Homescreen()),
+              MaterialPageRoute(builder: (context) => HomeScreen()),
             );
           }
           return NavigationDecision.navigate;

@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:cpyd/screens/homescreen.dart';
 import 'package:cpyd/screens/loginscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Votos UTEM',
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
