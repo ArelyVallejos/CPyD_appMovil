@@ -21,14 +21,13 @@ class AboutScreen extends StatelessWidget {
           const Integrante(
             image: "Arely",
             name: "     Luz Castro Vallejos",
-            about:
-                "       Como me hubiera gustado aprender flutter el verano pasado.",
+            about:"       Como me hubiera gustado aprender flutter el verano pasado.",
           ),
           const SizedBox(height: 20.0),
           const Integrante(
             image: "Ian",
             name: "     Ian Battistoni Fuentes",
-            about: "       Hey! nada que ver por aqui.",
+            about: "       Desarrollador Backend en proceso.",
           ),
           const SizedBox(height: 20.0),
           const Integrante(
